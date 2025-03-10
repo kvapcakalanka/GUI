@@ -1,0 +1,66 @@
+.destination-container {
+  text-align: center;
+  padding: 50px;
+  border-radius: 0 0 20px 20px;
+  color: white;
+  background-image: url('/Bali.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden; 
+}
+
+.destination-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+  border-radius: 0 0 20px 20px;
+}
+
+.destination-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  z-index: 2; 
+  position: relative;
+}
+
+.destination-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  color: #333; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2; 
+}
+
+.destination-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  cursor: pointer; 
+}
+
+.destination-card h2 {
+  color: #333; 
+}
+
+.destination-card p {
+  color: #333; 
+}
+
+.destination-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}

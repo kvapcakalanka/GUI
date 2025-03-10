@@ -1,0 +1,92 @@
+﻿<Page x:Class="TravelPlannerDesktop.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Home Page">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Grid Height="500">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Bali.jpg" Stretch="UniformToFill"/>
+                </Grid.Background>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="#AAFFFFFF" Margin="20">
+                    <TextBlock Text="Welcome to Travel Planner" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Padding="10"/>
+                    <TextBlock Text="Plan your perfect trip with our easy-to-use travel planner. From selecting destinations to booking accommodations, we've got you covered!" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,20,0,20"/>
+                    <Button Content="Get Started" Width="150" Height="50" Click="GetStarted_Click" Margin="10"/>
+                </StackPanel>
+            </Grid>
+
+            
+            <Border Margin="20" Background="#FF4A4A4A" Padding="20" CornerRadius="8">
+              
+                <StackPanel>
+                    <TextBlock Text="Future Updates" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <!-- Feature Card 1 -->
+                        <Border Width="200" Height="150" Margin="10" Padding="10" CornerRadius="8">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="#FF6A6A6A"/>
+                                   
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                    
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#FF808080"/>
+                                            <!-- Hover Background -->
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel>
+                                <TextBlock Text="Travel Budget Tracker" FontSize="16" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,5"/>
+                                <TextBlock Text="Keep your finances on track while you travel. Set budgets, track expenses, and enjoy worry-free adventures!" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <!-- Feature Card 2 -->
+                        <Border Width="200" Height="150" Margin="10" Padding="10" CornerRadius="8">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="#FF6A6A6A"/>
+                                    
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                    
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#FF808080"/>
+                                            <!-- Hover Background -->
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel>
+                                <TextBlock Text="Language Translator" FontSize="16" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,5"/>
+                                <TextBlock Text="Overcome language barriers while exploring the world. Translate text and speech instantly in multiple languages!" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <!-- Feature Card 3 -->
+                        <Border Width="200" Height="150" Margin="10" Padding="10" CornerRadius="8">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="#FF6A6A6A"/>
+                                    
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#FF808080"/>
+                                            <!-- Hover Background -->
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel>
+                                <TextBlock Text="Offline Maps" FontSize="16" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,5"/>
+                                <TextBlock Text="Navigate with ease even when offline. Download maps and access them anytime, anywhere!" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
